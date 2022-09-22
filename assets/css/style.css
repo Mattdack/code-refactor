@@ -7,6 +7,7 @@
 body {
     background-color: #d9dcd6;
 }
+
 /* Reorganized the semantic selectors before the class selectors since they are less specific. */
 a {
     color: #ffffff;
@@ -32,7 +33,8 @@ p {
 .header h1 .seo {
     color: #d9dcd6;
 }
-/* Changed the selector name to better reflect the updated html semantics. */
+
+/* Changed the selector name to better reflect the updated html semantics.*/
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -50,11 +52,11 @@ p {
     margin-left: 25px;
 }
 
+/* Moved the link from the style.css to index.html to add accessibilty alt text.*/
 .main-photo {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    /* background-image: url("../images/digital-marketing-meeting.jpg"); */
     background-size: cover;
     background-position: center;
 }
@@ -75,6 +77,28 @@ p {
     margin-left: 20px;
 }
 
+/*Selects for all of the horiseon service elements. Condenses previous selectors into one class that describes what it is selecting. */
+.horiseon-services {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*Condensing the Horiseon services img selectors into one block to reduce redundancy. */
+.horiseon-services img {
+    max-height: 200px;
+}
+
+/*Condensing the Horiseon services h2 selectors into one block to reduce redundancy. */
+.horiseon-services h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Moved all of the benefit sub-selectors below horiseon-services to match the order they are listed in HTML and make them easier to find when comparing the index.html and style.css files. */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,39 +109,24 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-/*Condensing the benefit selectors into one block and class to reduce redundancy. */
+
+/*Condensing the benefit selectors into one block and class to reduce redundancy.*/
 .benefit-type{
     margin-bottom: 32px;
     color: #ffffff;
 }
+
 /*Condensing the benefit h3 selectors into one block and class to reduce redundancy. */
 .benefit-type h3{
     margin-bottom: 10px;
     text-align: center;
 }
+
 /*Condensing the benefit img selectors into one block and class to reduce redundancy.*/
 .benefit-type img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
-}
-/*Condensing the Horiseon solution selectors into one block to reduce redundancy. */
-.horiseon-services {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-/*Condensing the Horiseon solution img selectors into one block to reduce redundancy. */
-.horiseon-services img {
-    max-height: 200px;
-}
-/*Condensing the Horiseon solution h2 selectors into one block to reduce redundancy. */
-.horiseon-services h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
 }
 
 .footer {
@@ -126,6 +135,7 @@ p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+
 /* Changed selector name to reflect changed html semantics. */
 .footer h4 {
     font-size: 20px;
